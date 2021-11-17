@@ -1,0 +1,329 @@
+*{
+    margin: 0;  
+    font-family: inherit;
+}
+
+html{   
+
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Tahoma, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+
+.navbar__name{
+    margin-left: 200px;
+}
+
+.navbar__name:hover{
+    
+}
+
+.navbar__name-logo{
+    font-family: 'Rochester', cursive !important;
+    text-decoration: none;
+    color: #e69a9b;
+    font-weight: 300;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar__choices{
+    list-style: none;
+    padding-left: 0px;
+    margin-right: 100px;
+}
+
+.navbar__choice{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.navbar__choices-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.navbar__choices-link:hover{
+    color: #e4a1a3;
+}
+
+.home__container{
+    margin-top: 60px;
+    height: 520px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home__container-info{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    margin-left: 120px;
+    flex-direction: column;
+}
+
+.home__container-name{
+    margin-top: 110px;
+    font-weight: 550;
+    font-size: 45px;
+    float: left;
+    
+}
+
+.home__container-description{
+    width: 450px;
+    text-align: justify;
+    margin-top: 30px;
+    float: left;
+    line-height: 25px;
+    font-weight: 100;
+    display: block;
+}
+
+
+.home__container-findmore{
+    align-self: center;
+    width: 120px;
+    height: 25px;
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: 0px solid;
+    border: 3px solid #e4a1a3;
+    color: rgb(48, 48, 48) !important;
+    background-color: transparent; 
+    display: inline-flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home__container-findmore:hover{
+    cursor: pointer;
+    color: white !important;
+    background-color: rgba(228,161,163,0.7);
+    transform: scale(1);
+}
+
+.home__container-findmore-arrow{
+    margin-top: 3px;
+    margin-left: 8px;
+}
+
+.home__container-avt{
+    width: 856px;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.home__container-avt-picture{
+    width: 100%;
+    height: 100%;
+}
+
+.story__container{
+    height: 850px;
+    background-color: white;
+    font-family: 'Rochester', cursive !important;
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.content-label{
+    color: #e69a9b;
+    font-size: 45px;
+    margin-top: 25px;
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+}
+
+.story-info{
+    padding: 0 330px 20px;
+    font-size: 18px;
+    font-family: Tahoma, sans-serif !important;
+    font-weight: 200;
+    margin-bottom: 50px;
+    line-height: 35px;
+}
+
+
+
+.story-content{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.story-img{
+    box-shadow: 0 5px 15px #af7273;
+    transition: .3s ease-in-out;
+}
+
+.story-img:hover{
+    opacity: 0.75;
+}
+
+.story-img-picture{
+    width: 100%;
+    height: 100%;
+}
+
+
+.clock{
+    height: 200px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Rochester', cursive !important;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+
+}
+
+.clock__day{   
+    width: 25%;
+    border-right: 1px solid #ccc;
+    transition: 0.2s ease-in;
+}
+
+.clock__hour{
+    width: 25%;
+    border-right: 1px solid #ccc;
+    transition: 0.2s ease-in;  
+}
+.clock__minute{
+    width: 25%;
+    border-right: 1px solid #ccc;
+    
+}
+
+.clock__second{
+    width: 25%;
+    transition: 0.2s ease-in;
+}
+
+.clock_hover:hover{
+    color: #d1979a;
+    cursor: default;
+}
+
+
+
+.moment__container{
+    height: 1900px;
+    background-color: white;
+    font-family: 'Rochester', cursive !important;
+    text-align: center;
+    padding: 64px 16px;
+}
+
+
+
+.moment__content{
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.moment__item-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.moment__item{
+    position: relative;
+    height: 500px;
+    font-family: Tahoma, sans-serif !important;
+    box-shadow: 0 5px 15px #af7273;
+}
+
+
+.moment__img{
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in-out;
+}
+
+.moment-infor{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: none;
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
+.moment__item:hover img{
+    opacity: 0.05;
+}
+
+.moment__item:hover div{
+    display: block;
+    cursor: default;
+}
+
+.moment-description{
+    font-size: 18px;
+    font-family: Tahoma, sans-serif !important;
+    font-weight: 200;
+}
+
+.footer{
+    font-family: 'Rochester', cursive !important;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding-top: 64px;
+}
+
+.footer-img{
+    width: 100%;
+}
+
+.footer-img-picture{
+    width: 100%;
+}
+
+.footer-msg{
+    font-size: 18px;
+    font-family: Tahoma, sans-serif !important;
+    font-weight: 200;
+    padding: 0 120px;
+    line-height: 30px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+.footer-end-text{
+    display: block;
+    margin-top: 20px;
+    float: right;
+}
