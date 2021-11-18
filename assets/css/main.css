@@ -87,6 +87,7 @@ body{
     font-weight: 550;
     font-size: 45px;
     float: left;
+    font-family: 'Aclonica', sans-serif !important;
     
 }
 
@@ -102,6 +103,7 @@ body{
 
 
 .home__container-findmore{
+    text-decoration: none;
     align-self: center;
     width: 120px;
     height: 25px;
